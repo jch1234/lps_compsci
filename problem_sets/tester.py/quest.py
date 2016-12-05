@@ -21,4 +21,21 @@ else:
 	print(character_name + ": " + "strength= " + str(strength) + "," + "health= " + str(health) + "," + "luck= " + str(luck))
 
 print(character_name + " you've come to a fork in the road. Do you want to go right or left? Enter 'right' or 'left'.")
+direction = raw_input()
+
+if direction == "left":
+	print("As you turn left you encounter a steep hill and you decide to climb it.")  
+	if strength >= 8 and health >= 5 and luck >= 2:
+		print("Your strength and health led you to climb over the hill and enjoy the sunset. You won the game congratulations.")
+	else: 
+		print("You weren't strong, healthy, or lucky enough to climb over the hill, so you slipped and fell :(. You lost the game try Again.")
+if direction == "right":
+	print("As you turn you fall into quicksand!")
+	if strength >= 8 and health >= 5 and luck >= 2:
+		print("Your strength and health led you to be able to grab onto a branch and pull yourself out of the quicksand! You won the game congratulations.")
+	else:
+		print("You weren't strong,lucky, or healthy enough to get out of the quicksand :(. You lost the game try again!") 
+
+
+
 
