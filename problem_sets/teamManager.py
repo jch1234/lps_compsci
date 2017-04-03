@@ -32,7 +32,7 @@ while sport == "soccer":
 	response = int(raw_input())
 #if the user chooses 1 it will ask the the player's info  
 	if response == 0:
-		sport == "sitting"
+		sport = "sitting"
 	if response == 1:
 		print("Enter your player's name and press enter")
 		playerName = raw_input()
